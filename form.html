@@ -1,0 +1,118 @@
+<head>
+    <meta charset="uft-8">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    
+     <div class="container">
+         <form>
+         <h3>Inciar sesion</h3>
+         <div class="inputbox">
+             <span>correo</span>
+             <div class="box">
+                 <div class="icon"><ion-icon name="mail">
+                 </ion-icon></div>
+                 <input type="email"id="Email" name="Email" placeholder="Email" required>
+             </div>
+             <div class="inputbox">
+                <span>contraseña</span>
+                <div class="box">
+                    <div class="icon"><ion-icon name="lock-closed">
+                    </ion-icon></div>
+                    <input type="password" name="password"id="password" placeholder="password" required>
+                </div>
+                  <br>
+                     <input class="boton" type="submit" value="Entrar">
+             </div>
+             
+         </form>
+     </div>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            padding: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        body{
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           min-height: 100vh;
+           background: #333;
+        }
+         .container
+         {
+             position: relative;
+             width: 350px;
+             min-height: 500px;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             background: #2f363e;
+             box-shadow: 5px 10px 10px 10px rgb(0, 0, 0),
+             inset 5px 5px 10px rgba(0,0,0,0.5),
+             inset 5px 5px 20px rgba(255,255,255,0.2),
+             inset -5px -5px 15px rgba(0,0,0,0.75);
+         }
+         .container,h3{
+             font-size: 20px;
+             color: white;
+         }
+         h3{
+             font-size: 25px;
+             margin: 10px;
+         }
+         .boton{
+             color: black;
+             padding: 10px;
+             width: 200px;
+             font-size: 20px;
+             align-items: center;
+         }
+           a{
+               text-decoration: none;
+           }
+          .input .box{
+              display: flex;
+          }
+           .inputbox .box .icon
+           {
+               position: relative;
+               width: 40px;
+               height: 40px;
+               background:rgb(255, 0, 136);
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               border-radius: 50px;
+               margin-right: 10px;
+               margin: 5px;
+               box-shadow: 5px 5px 7px rgb(31, 28, 28),
+               inset 2px 2px 5px rgb(255,255,255,0.25),
+               inset -3px -3px 5px rgba(0,0,0,0.5);
+           }
+           input{
+               padding: 8px;
+               border-radius: 10px;
+               border: 2px solid black;
+           }
+            .boton
+           {   background:rgb(255, 0, 136);
+               box-shadow: 5px 5px 10px rgb(22, 21, 21),
+               inset 2px 2px 5px rgba(255,255,255,0.2),
+               inset -5px -5px 5px rgba(0,0,0,0.5);
+               border-radius: 20px;
+               color: white;
+        
+           }
+           .boton:focus{
+            padding: 5px;
+        
+           }
+           
+    </style>
+
+    </body>
